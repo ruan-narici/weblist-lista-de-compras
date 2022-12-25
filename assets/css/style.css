@@ -1,0 +1,414 @@
+:root {
+    --color-red: #D0203A;
+    --color-bright-blue: #60B6D8;
+    --color-dark-blue: #4B7D93;
+    --color-white: #FFFFFF;
+    --color-white-opacity-70: rgba(255, 255, 255, 0.7);
+    --color-shadow: rgba(0, 0, 0, 0.25);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    resize: none;
+}
+
+body {
+    background: linear-gradient(90deg, var(--color-red), var(--color-bright-blue));
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-white);
+    animation: anima-entrada 2s forwards;
+}
+
+@keyframes anima-entrada {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+/* Page 1 */
+
+.stage-1 {
+    position: relative;
+}
+
+.box-elements-left {
+    margin: 65px 0 0 145px;
+    display: inline-block;
+    width: 515px;
+    text-align: left;
+}
+
+.title-lv1 {
+    font-size: 60px;
+    font-weight: bold;
+    width: 510px;
+}
+
+.text-desc {
+    font-size: 30px;
+    font-weight: lighter;
+    width: 450px;
+    text-align: justify;
+}
+
+.box-button {
+    width: 515px;
+    margin: 135px 0 0 0;
+}
+
+.btn-stage-1 {
+    width: 385px;
+    height: 75px;
+    font-size: 35px;
+    font-weight: bold;
+    background: var(--color-white);
+    border: none;
+    border-radius: 40px;
+    color: var(--color-dark-blue);
+    text-transform: uppercase;
+    box-shadow: 0 0 40px var(--color-shadow);
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.btn-stage-1:hover {
+    background: var(--color-white-opacity-70);
+}
+
+.text-dev {
+    margin: 25px 0 0 0;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.text-dev a {
+    font-weight: bold;
+    color: var(--color-white);
+    text-decoration: none;
+    transition: 0.5s all;
+}
+
+.text-dev a:hover {
+    animation: anima-dev 1s infinite;
+}
+
+@keyframes anima-dev {
+    0% {
+        color: var(--color-red);
+        
+    }
+    50% {
+        color: var(--color-bright-blue);
+    }
+    100% {
+        color: var(--color-red);
+    }
+}
+
+.elements-right {
+    display: inline-block;
+    position: absolute;
+    margin: 40px 35px 0 125px;
+    width: 450px;
+    text-align: center;
+}
+
+.logo-web-list {
+    display: block;
+}
+
+.logo-7daysofcode {
+    margin: -30px 0 0 0;
+}
+
+.progress-bar {
+    margin: 25px 0 0 0;
+}
+
+
+
+/* Page 2 */
+
+.box-stage-2 {
+    width: 650px;
+    margin: 65px auto 0 auto;
+}
+
+.title-lv2 {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.element-desc,
+.element-desc {
+    display: block;
+    font-size: 25px;
+    font-weight: lighter;
+    margin: 20px 0 10px 0;
+    text-align: left;
+}
+
+.center-inpt-element {
+    display: flex;
+}
+
+.inpt-element-name {
+    width: 510px;
+    height: 45px;
+    background: var(--color-white-opacity-70);
+    border: 2px solid var(--color-white);
+    border-radius: 40px;
+    outline: none;
+    color: var(--color-dark-blue);
+    font-size: 20px;
+    padding: 5px 15px;
+    text-transform: uppercase;
+}
+
+.btn-add {
+    width: 130px;
+    height: 45px;
+    background: var(--color-white);
+    border-radius: 40px;
+    color: var(--color-dark-blue);
+    font-size: 40px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin: 0 0 0 10px;
+}
+
+.btn-add:hover {
+    background: var(--color-white-opacity-70);
+}
+
+.element-category-name {
+    width: 650px;
+    height: 180px;
+    background: var(--color-white-opacity-70);
+    border: 2px solid var(--color-white);
+    border-radius: 40px 0 0 40px;
+    outline: none;
+    color: var(--color-dark-blue);
+    font-size: 15px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+.box-button-stg {
+    text-align: center;
+}
+
+.btn-stage {
+    width: 180px;
+    height: 45px;
+    background: var(--color-white);
+    box-shadow: 0px 0px 10px var(--color-shadow);
+    border-radius: 40px;
+    color: var(--color-dark-blue);
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0 0 0;
+}
+
+.btn-stage:hover {
+    background: var(--color-white-opacity-70);
+}
+
+.sevendaysofcode {
+    margin: 40px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.progress-bar-stg2 {
+    margin: 25px 0 0 0;
+}
+
+
+
+/* Page 3 */
+
+.box-stage-3 {
+    width: 650px;
+    margin: 65px auto 0 auto;
+}
+
+.box-input {
+    position: relative;
+}
+
+.box-input .btn-add {
+    position: absolute;
+    bottom: 0;
+}
+
+.box-inpt-name,
+.box-inpt-category {
+    width: 250px;
+    display: inline-block;
+}
+
+.box-input .inpt-element-name {
+    width: 250px;
+}
+
+
+
+/* Page 4 */
+
+.box-stage-4 {
+    width: 650px;
+    margin: 65px auto 0 auto;
+}
+
+.element-all-itens-category {
+    width: 650px;
+    height: 375px;
+    background: var(--color-white-opacity-70);
+    border: 2px solid var(--color-white);
+    border-radius: 40px 0 0 40px;
+    outline: none;
+    color: var(--color-dark-blue);
+    font-size: 20px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    margin: 20px 0 0 0;
+}
+
+@media (max-width: 1300px) {
+
+    .elements-right {
+        margin: 40px 35px 0 -100px;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    body {
+        height: 900px;
+    }
+
+    .box-elements-left {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .elements-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    
+    .box-elements-left,
+    .title-lv1,
+    .text-desc,
+    .box-button,
+    .elements-right,
+    .stage-1,
+    .stage-2,
+    .box-stage-2,
+    .element-category-name,
+    .stage-3,
+    .box-stage-3,
+    .box-input,
+    .stage-4,
+    .box-stage-4,
+    .element-all-itens-category  {
+        width: 350px;
+        margin: 20px 10px;
+        text-align: left;
+    }
+
+    .logo-web-list {
+        width: 260px;
+        display: none;
+    }
+
+    .title-lv1,
+    .title-lv2 {
+        font-size: 30px;
+    }
+
+    .element-desc,
+    .element-category-name {
+        font-size: 20px;
+        margin: 10px 0 5px 0;
+    }
+
+    .center-inpt-element,
+    .element-category-name {
+        font-size: 15px;
+    }
+
+    .text-desc {
+        font-size: 15px;
+        width: 300px;
+    }
+
+    .box-button,
+    .btn-stage-1,
+    .btn-stage {
+        width: 200px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .text-dev {
+        font-size: 15px;
+        width: 350px;
+    }
+
+    .logo-7daysofcode {
+        margin: 60px 0 0 0;
+        width: 200px;
+    }
+
+    .progress-bar {
+        width: 300px;
+        margin: 10px 0 0 0;
+    }
+
+    .box-inpt-name,
+    .box-input .inpt-element-name,
+    .box-inpt-category {
+        width: 100px;
+        font-size: 15px;
+    }
+}
+
+
+
+
+
+
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+    animation: anima-entrada 1s forwards;
+}
+

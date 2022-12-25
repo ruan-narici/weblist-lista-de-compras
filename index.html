@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#7DaysOfCode | Day-5</title>
+    <Ruan-Narici></Ruan-Narici>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <main>
+        <!-- Page 1-->
+        <section class="stage-1 show">
+            <div class="box-elements-left">
+                <h1 class="title-lv1">Seja bem-vindo(a) ao WebList!</h1>
+                <p class="text-desc">Com o WebList você poderá criar listas de compras e também agrupá-las por categoria.</p>
+                <div class="box-button">
+                    <input class="btn-stage-1" type="button" value="Criar uma lista" id="button-stage-1">
+                    <p class="text-dev">O Weblist foi desenvolvido por <a href="https://www.linkedin.com/in/ruan-narici-6a590416b/" target="_blank">Ruan Narici</a></p>
+                </div>
+            </div>
+            <div class="elements-right">
+                <img src="./assets/img/car-logo.png" alt="Carrinho de compras" class="logo-web-list">
+                <img src="./assets/img/7DaysOfCode_img.png" alt="#7DaysOfCode" class="logo-7daysofcode">
+                <img src="./assets/img/bar-progress-5.png" alt="Barra de progresso" class="progress-bar">
+            </div>
+        </section>
+        <!--Page 2-->
+        <section class="stage-2 hide">
+            <div class="box-stage-2">
+                <h1 class="title-lv2">Categorias</h1>
+                <label for="category-name" class="element-desc">Nome</label>
+                <div class="center-inpt-element">
+                    <input class="inpt-element-name" type="text" name="element-name" id="category-name">
+                    <input class="btn-add" type="button" value="+" id="category-add">
+                </div>
+                <label for="category-itens" class="element-desc">Lista de categorias</label>
+                <textarea class="element-category-name" name="element-name" id="category-itens" cols="30" rows="10" readonly></textarea>
+                <div class="box-button-stg">
+                    <input class="btn-stage" type="button" value="Continuar" id="button-stage-2">
+                </div>
+                <div class="sevendaysofcode">
+                    <img src="./assets/img/7DaysOfCode_img.png" alt="#7DaysOfCode" class="logo-7daysofcode-stg2">
+                    <img src="./assets/img/bar-progress-5.png" alt="Barra de progresso" class="progress-bar-stg2">
+                </div>
+            </div>
+        </section>
+        <!--Page 3-->
+        <section class="stage-3 hide">
+            <div class="box-stage-3">
+                <h1 class="title-lv2">Itens</h1>
+                <div class="box-input">
+                    <div class="box-inpt-name">
+                        <label for="item-name" class="element-desc">Nome</label>
+                        <input class="inpt-element-name" type="text" name="element-name" id="item-name">
+                    </div>
+                    <div class="box-inpt-category">
+                        <label class="element-desc" for="item-category">Categoria</label>
+                        <select class="inpt-element-name" name="element-name" id="item-category">
+                        <!-- <option value="a">a</option>    
+                        <option value="b">b</option>    
+                        <option value="c">c</option>     -->
+                        <select>
+                    </div>
+                    <input class="btn-add" type="button" value="+" id="item-add-i">
+                </div>
+                <label for="category-itens" class="element-desc">Lista de itens</label>
+                <textarea class="element-category-name" name="element-name" id="show-itens" cols="30" rows="10" readonly></textarea>
+                <div class="box-button-stg">
+                    <input class="btn-stage" type="button" value="Finalizar" id="button-stage-3">
+                </div>
+                <div class="sevendaysofcode">
+                    <img src="./assets/img/7DaysOfCode_img.png" alt="#7DaysOfCode" class="logo-7daysofcode-stg2">
+                    <img src="./assets/img/bar-progress-5.png" alt="Barra de progresso" class="progress-bar-stg2">
+                </div>
+            </div>
+        </section>
+        <!--Page 4-->
+        <section class="stage-4 hide">
+            <div class="box-stage-4">
+                <h1 class="title-lv2">Lista completa</h1>
+                <textarea class="element-all-itens-category" name="element-name" id="show-all-itens-category" cols="30" rows="10" readonly></textarea>
+                <div class="sevendaysofcode">
+                    <img src="./assets/img/7DaysOfCode_img.png" alt="#7DaysOfCode" class="logo-7daysofcode-stg2">
+                    <img src="./assets/img/bar-progress-5.png" alt="Barra de progresso" class="progress-bar-stg2">
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
