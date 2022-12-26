@@ -1,4 +1,7 @@
 >Status project: Finished
+
+>New update `button-remove-item`
+
 # WebList - Lista de Compras
 
 Project developed during the challenge of #7DaysofCode.
@@ -14,6 +17,4 @@ Project developed during the challenge of #7DaysofCode.
 This project was developed with objective of list the all purchases done if supermarket
 
 ## Preview
-![](./assets/img/preview.gif#vitrinedev)
-## Happy Christmas
-![](./assets/img/natal.jpg)
+![](./assets/img/_preview.gif#vitrinedev)

@@ -148,6 +148,7 @@ body {
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
+    text-shadow: 0 8px 5px var(--color-shadow);
 }
 
 
@@ -156,7 +157,7 @@ body {
     display: block;
     font-size: 25px;
     font-weight: lighter;
-    margin: 20px 0 10px 0;
+    margin: 20px 0 5px 0;
     text-align: left;
 }
 
@@ -199,6 +200,7 @@ body {
     height: 180px;
     background: var(--color-white-opacity-70);
     border: 2px solid var(--color-white);
+    border-right: 10px solid var(--color-dark-blue);
     border-radius: 40px 0 0 40px;
     outline: none;
     color: var(--color-dark-blue);
@@ -267,6 +269,30 @@ body {
     display: inline-block;
 }
 
+.btn-remove {
+    width: 130px;
+    height: 45px;
+    background: var(--color-white);
+    border-radius: 40px;
+    color: var(--color-red);
+    font-size: 40px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin: 0 0 0 10px;
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+}
+
+.btn-remove:hover {
+    background: var(--color-white-opacity-70);
+}
+
+.btn-stg-3 {
+    width: 60px;
+}
+
 .box-input .inpt-element-name {
     width: 250px;
 }
@@ -286,6 +312,7 @@ body {
     background: var(--color-white-opacity-70);
     border: 2px solid var(--color-white);
     border-radius: 40px 0 0 40px;
+    border-right: 10px solid var(--color-dark-blue);
     outline: none;
     color: var(--color-dark-blue);
     font-size: 20px;

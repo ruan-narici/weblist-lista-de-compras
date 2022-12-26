@@ -22,6 +22,7 @@ hideAndShow = () => {
         section1.classList.remove('show');
         section2.classList.remove('hide');
         section2.classList.add('show');
+        document.querySelector('body').style.background = 'linear-gradient(90deg, #60B6D8, #C5F8FF)';
     })
 }
 
@@ -53,6 +54,8 @@ hideAndShow2 = () => {
             section2.classList.remove('show');
             section3.classList.remove('hide');
             section3.classList.add('show');
+
+            document.querySelector('body').style.background = 'linear-gradient(90deg, #D0203A, #FFE4E0)';
         }
         else {
             alert('Registre no mínimo uma categoria.');
@@ -106,6 +109,9 @@ const btnStage3Add = document.querySelector('#item-add-i');
 //btn_2
 const btnStage3 = document.querySelector('#button-stage-3');
 
+//btn 3 
+const btnStage3Remove = document.querySelector('#item-remove-i');
+
 //textArea
 const itemTextArea = document.querySelector('#show-itens');
 
@@ -120,6 +126,8 @@ hideAndShow3 = () => {
             section4.classList.remove('hide');
             section4.classList.add('show');
             showAllItens();
+
+            document.querySelector('body').style.background = 'linear-gradient(90deg, #60B6D8, #74ECAE)';
         }
         else {
             alert('Registre no mínimo um item.');
@@ -139,6 +147,28 @@ addItem = () => {
             inptItemName.style.background = 'rgba(255,255,255,0.7)';
         }
         else {
+            alert('Preencha o campo destacado.');
+            inptItemName.style.background = '#DFE08F';
+        }
+    })
+}
+
+removeItem = () => {
+    btnStage3Remove.addEventListener('click', () => {
+        if (itens.indexOf(`${inptSelectCategory.value}: ${inptItemName.value}\n`) != -1) {
+            itens.splice(itens.indexOf(`${inptSelectCategory.value}: ${inptItemName.value}\n`), 1);
+            alert(`Item *${inptItemName.value}* removido da lista.`);
+            itemTextArea.value = itens.sort();
+            itemTextArea.value = itemTextArea.value.replaceAll(',', '');
+            inptItemName.value = '';
+            inptItemName.style.background = 'rgba(255,255,255,0.7)';
+        }
+        else if (itens.indexOf(`${inptSelectCategory.value}: ${inptItemName.value}\n`) == -1 &&
+                inptItemName.value != '') {
+            alert(`Não foi possível localizar o item ${inptItemName.value}.`);
+            inptItemName.style.background = 'rgba(255,255,255,0.7)';
+        }
+        else if (inptItemName.value == '') {
             alert('Preencha o campo destacado.');
             inptItemName.style.background = '#DFE08F';
         }
@@ -166,3 +196,4 @@ hideAndShow2();
 hideAndShow3();
 addCategory();
 addItem();
+removeItem();
